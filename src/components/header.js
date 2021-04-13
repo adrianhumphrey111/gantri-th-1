@@ -18,11 +18,7 @@ const StyledFloatingHeader = styled.div`
     position: fixed; 
     top: 0; 
     width: 100%;
-  z-index: 1;
-  
-  ${media.desktop}{
-    //height: 60px;
-  }
+    z-index: 1;
 `;
 
 const StyledHeader2Label = styled.h2`

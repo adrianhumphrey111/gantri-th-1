@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import FloatingHeader from "./components/header";
 import Welcome from "./components/welcome";
@@ -7,9 +6,7 @@ import FoundersBlock from "./components/foundersBlock";
 import styled from "styled-components";
 import {
     BrowserRouter as Router,
-    Switch,
     Route,
-    Link
 } from "react-router-dom";
 
 const media = {
@@ -18,11 +15,11 @@ const media = {
 
 const Container = styled.div`
   overflow-y: scroll;
-  top: 80px;
+  top: 70px;
   position: relative;
   
   ${media.desktop}{
-    top: 100px;
+    top: 90px;
   }
 `;
 

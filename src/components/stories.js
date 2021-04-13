@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import {useState} from "react";
-import {Container} from "@material-ui/core";
 import StoryCard from "./storyCard";
 
 const media = {

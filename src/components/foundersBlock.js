@@ -34,7 +34,6 @@ const StyledParagraph = styled.p`
 `;
 
 const FoundersBlock = () => {
-
     return (
         <Container>
             <StyledHeader>

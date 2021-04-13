@@ -60,8 +60,6 @@ const StoryCard = ({story}) => {
                                 {story.author}
                             </Typography>
                         </StyledAuthorContainer>
-
-
                     </CardContent>
                 </CardActionArea>
             </Card>

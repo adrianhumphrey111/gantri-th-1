@@ -17,15 +17,7 @@ const StyledWelcomeContainer = styled.div`
   ${media.desktop}{
     align-items: flex-start;
     justify-content: center;
-  }
-`;
-
-const StyledHeaderLabel = styled.h1`
-  font-size: 30px;
-  margin-left: 20px;
-  
-  ${media.desktop}{
-    font-size: 40px;
+    padding-left: 20px;
   }
 `;
 
