@@ -19,6 +19,18 @@ const StyledFloatingHeader = styled.div`
   }
 `;
 
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+`;
+
+const StyledInputContainer = styled.div`
+display: flex;
+  flex-direction: column;
+  width: 50%;
+`;
 
 const SignUp = ({setOpen}) => {
 
@@ -27,19 +39,22 @@ const SignUp = ({setOpen}) => {
     }
 
     return (
-        <div>
+        <Container>
             <div>
                 Sign Up
             </div>
-            <input/>
-            <input/>
+            <StyledInputContainer>
+                <input/>
+                <input/>
+            </StyledInputContainer>
+
             <button>
                 Continue
             </button>
             <div onClick={handleClose}>
                 exit
             </div>
-        </div>
+        </Container>
     )
 };
 

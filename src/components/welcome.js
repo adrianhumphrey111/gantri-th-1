@@ -12,6 +12,7 @@ const StyledWelcomeContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding-top: 50px;
+  gap: 12px;
 
   ${media.desktop}{
     align-items: flex-start;

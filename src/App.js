@@ -3,6 +3,7 @@ import './App.css';
 import FloatingHeader from "./components/header";
 import Welcome from "./components/welcome";
 import Stories from "./components/stories";
+import FoundersBlock from "./components/foundersBlock";
 import styled from "styled-components";
 import {
     BrowserRouter as Router,
@@ -39,10 +40,7 @@ function App() {
               <FloatingHeader/>
               <Container>
                   <Welcome/>
-                  <Welcome/>
-                  <Welcome/>
-                  <Welcome/>
-                  <Welcome/>
+                  <FoundersBlock/>
               </Container>
           </Route>
       </Router>
