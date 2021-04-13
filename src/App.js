@@ -1,24 +1,51 @@
 import logo from './logo.svg';
 import './App.css';
+import FloatingHeader from "./components/header";
+import Welcome from "./components/welcome";
+import Stories from "./components/stories";
+import styled from "styled-components";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
+
+const media = {
+    desktop: `@media(min-width: 991px)`
+}
+
+const Container = styled.div`
+  overflow-y: scroll;
+  top: 80px;
+  position: relative;
+  
+  ${media.desktop}{
+    top: 100px;
+  }
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+          <Route path="/stories">
+              <FloatingHeader/>
+              <Container>
+                  <FloatingHeader/>
+                  <Stories/>
+              </Container>
+          </Route>
+          <Route exact path="/">
+              <FloatingHeader/>
+              <Container>
+                  <Welcome/>
+                  <Welcome/>
+                  <Welcome/>
+                  <Welcome/>
+                  <Welcome/>
+              </Container>
+          </Route>
+      </Router>
   );
 }
 
